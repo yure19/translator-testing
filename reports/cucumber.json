@@ -1,0 +1,107 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-08-13T20:32:21.311Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3370241271,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TranslateTest.initialize()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "translate a word",
+        "description": "",
+        "id": "translate;translate-a-word;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1027716199,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TranslateTest.closeDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 140945291,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "a source as \"spanish\", a target as \"english\" and a word as \"familia\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "spanish",
+                  "offset": 13
+                },
+                {
+                  "val": "english",
+                  "offset": 36
+                },
+                {
+                  "val": "familia",
+                  "offset": 60
+                }
+              ],
+              "location": "TranslateTest.a_source_as_a_target_as_and_a_word_as(String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 25232926824,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "i translate the word",
+            "match": {
+              "location": "TranslateTest.i_translate_the_word()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 37656614,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "i can view the translated word as \"family\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "family",
+                  "offset": 35
+                }
+              ],
+              "location": "TranslateTest.i_can_view_the_translated_word(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "translate",
+    "description": "",
+    "id": "translate",
+    "keyword": "Feature",
+    "uri": "file:src/test/features/translate.feature",
+    "tags": []
+  }
+]
